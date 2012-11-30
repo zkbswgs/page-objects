@@ -2,34 +2,25 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
-repositories {
-    mavenCentral()
-}
+repositories { mavenCentral() }
 
 dependencies {
-    compile "org.seleniumhq.selenium:selenium-java:2.25.0"
-    compile "org.testng:testng:6.3.1"
+	compile "org.seleniumhq.selenium:selenium-java:2.25.0"
+	compile "org.testng:testng:6.3.1"
 }
 
 tasks.withType(Test) {
-    useTestNG()
-    systemProperties = System.getProperties()
-    maxParallelForks = 2
+	useTestNG()
+	systemProperties = System.getProperties()
+	maxParallelForks = 2
 }
 
 task includegroup1(type: Test) {
-    useTestNG() {
-        includeGroups 'group1'
-    }
+	useTestNG() { includeGroups 'group1' }
 }
 
 task excludegroup1(type: Test) {
-    useTestNG() {
-        excludeGroups 'group1'
-    }
+	useTestNG() { excludeGroups 'group1' }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.1'
-}
-
+	task wrapper(type: Wrapper) { gradleVersion = '1.1' }
 }
