@@ -1,13 +1,13 @@
 (Forked from https://github.com/iainrose/page-objects on Nov 30, 2012)
 
-This project is an example of building a test automation framework using WebDriver w Java, TestNG, Gradle with InteliJ or Eclipse.
+This project is an example of building a test automation framework using WebDriver w Java, TestNG, Gradle with Eclipse.
 
-It extends the basic tutorial found on the Selenium Wiki and runs a couple of tests against Stack Overflow.
+It extends the basic tutorial found on the Selenium Wiki and runs a couple of tests against www.icdp-online.org
 
 http://code.google.com/p/selenium/wiki/GettingStarted
 http://code.google.com/p/selenium/wiki/PageObjects
 
-There are a couple of key concepts demonstrated in this project that will help you get started
+There are a couple of key concepts demonstrated in this project that will help you get started.
 
 - Switching the navigation of the tests from one page object to another
 - Abstracting the test setup into a BaseTest class
@@ -15,12 +15,6 @@ There are a couple of key concepts demonstrated in this project that will help y
 
 Creating the IDE project
 ------------------------
-
-InteliJ
-cd ~/<checkout dir>/page-objects
-./gradlew idea
-
-Open the generated page-objects.ipr file and you're good to go. All your dependencies will be automatically resolved and ready to use.
 
 Eclipse
 cd ~/<checkout dir>/page-objects
@@ -64,6 +58,9 @@ Right click on the test and select 'run' or 'debug'
 
 Running the tests using Gradle
 ------------------------------
+Install Gradle with 3 "apt" Commands: See http://yarovoy.com/post/34120695751/install-gradle-12-on-ubuntuu 
+
+Unset JAVA_OPTS
 
 Unless you have Gradle installed, you'll need to use the Gradle wrapper which is included in the project
 ./gradlew or gradle.bat on Windows
@@ -89,4 +86,4 @@ gradle.bat clean test -DBROWSER=internetExplorer
 
 
 All and any feedback welcome and appreciated, I'm still learning too.
-@iainrose
+@sudo_f
