@@ -1,4 +1,9 @@
-(Forked from https://github.com/iainrose/page-objects on Nov 30, 2012)
+*(Preventively Forked from https://github.com/iainrose/page-objects on Nov 30, 2012)
+
+TODO: Learn clever encapsulation of Selenium Calls.
+
+This project seems to be rigorous in its attempt to build an abstaction layyer on top of Selenium Webdriver. 
+Very interesting, never used (complex dependencies)*
 
 This project is an example of building a test automation framework using WebDriver w Java, TestNG, Gradle with InteliJ or Eclipse.
 
